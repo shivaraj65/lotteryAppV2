@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+/* .custom-background{
+    background-color: azure;
+    height: 40vh;
+    background-image: url("../../assets/images/ether-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.navbar-custom{
+    background-color: rgba(0, 0, 0, 0);
+}
+.loginbutton{
+    /* min-width: 150px; */
+    margin: 10px 15px;
+    padding: 0.3rem 0.7rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    border-radius: 20px;
+}
+
+
+.loginbutton:disabled {
+  pointer-events: none;
+}
+
+.loginbutton:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.loginbutton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.text-gradient-01{
+  background: #C6FFDD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity:0.8;
+}
+
+/* classes for the fonts */
+
+
+.font-style-01{
+  font-family: 'Comforter', cursive;
+}
+.font-style-02{
+  font-family: 'Festive', cursive;
+}
+.font-style-03{
+  font-family: 'Press Start 2P', cursive;
+}
+.font-style-04{
+
+}
