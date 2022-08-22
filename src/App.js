@@ -9,7 +9,7 @@ import {
 import Landing from './layouts/landing/landing';
 import Dashboard from './layouts/dashboard/dashboard';
 import Login from './layouts/login/login';
-import Signup from './layouts/signup/signup';
+import Signup from './layouts/signupG/signup';
 import Redirecter from './layouts/redirecter/redirecter';
 
 function App() {

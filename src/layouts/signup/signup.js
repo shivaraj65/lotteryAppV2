@@ -21,9 +21,9 @@ const Signup=()=>{
     const handleShow = () => setShow(true);
 
     //google signup response logger...
-    // const responseGoogle = (response) => {
-    //     console.log(response);
-    // }
+    const responseGoogle = (response) => {
+        console.log(response);
+    }
 
      //password test function
      const passwordTestfunc=(data)=>{
