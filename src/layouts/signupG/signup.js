@@ -100,8 +100,7 @@ const Signup=()=>{
                         className='btn p-0 '
                         onClick={()=>{
                         navigate("/");
-                    }}><img src="https://img.icons8.com/fluency/48/000000/delete-sign.png"/></button>
-                    
+                    }}><img src="https://img.icons8.com/fluency/35/000000/delete-sign.png"/></button>                    
                 </div>
             <div className="row">
                 <div className="col-sm-7 px-0 mx-0 d-none d-sm-block">
@@ -125,7 +124,7 @@ const Signup=()=>{
                                 required 
                                 autoFocus
                                 className="form-control text-info font-weight-bold" 
-                                placeholder="john doe"
+                                placeholder="enter your name"
                                 value={name}
                                 onChange={(e)=>{setname(e.target.value)}}
                                 />

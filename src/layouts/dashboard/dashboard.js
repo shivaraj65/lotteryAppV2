@@ -201,8 +201,8 @@ const Dashboard=()=>{
             <nav class="navbar navbar-dark fixed-top py-2" style={{backgroundImage: "linear-gradient(90deg, #8EC5FC 0%,#E0C3FC 70%, #E0C3FC 100%)", borderBottom:"1px groove #fdb7c3"}}>
                 <a class="navbar-brand font-weight-bold font-style-01" href="#">Lottery App</a>
                 <div className='ml-auto'>
-                    <span className="text-light font-weight-bold">{window.sessionStorage.getItem("userID")}</span>
-                    <span className="mx-4 text-light font-weight-bold">{window.sessionStorage.getItem("userName")}</span>
+                    <span className="text-dark font-weight-bold">{window.sessionStorage.getItem("userID")}</span>
+                    <span className="mx-4 text-dark font-weight-bold">{window.sessionStorage.getItem("userName")}</span>
                     <button className='btn btn-outline-light font-weight-bold badge-pill'>Signout</button>
                 </div>
             </nav> 
