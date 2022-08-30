@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/lotteryAppV2/static/css/main.b9d9e4ef.css",
-    "main.js": "/lotteryAppV2/static/js/main.635cc457.js",
+    "main.js": "/lotteryAppV2/static/js/main.09dbd816.js",
     "static/js/787.1c1198e1.chunk.js": "/lotteryAppV2/static/js/787.1c1198e1.chunk.js",
     "static/media/bg-side-001-clean.jpg": "/lotteryAppV2/static/media/bg-side-001-clean.1a0a647c0b009730b711.jpg",
     "static/media/landing-bg.jpg": "/lotteryAppV2/static/media/landing-bg.0b49830c7d1f78c9d709.jpg",
     "static/media/logo.svg": "/lotteryAppV2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/lotteryAppV2/index.html",
     "main.b9d9e4ef.css.map": "/lotteryAppV2/static/css/main.b9d9e4ef.css.map",
-    "main.635cc457.js.map": "/lotteryAppV2/static/js/main.635cc457.js.map",
+    "main.09dbd816.js.map": "/lotteryAppV2/static/js/main.09dbd816.js.map",
     "787.1c1198e1.chunk.js.map": "/lotteryAppV2/static/js/787.1c1198e1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b9d9e4ef.css",
-    "static/js/main.635cc457.js"
+    "static/js/main.09dbd816.js"
   ]
 }
