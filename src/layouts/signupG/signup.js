@@ -53,7 +53,7 @@ const Signup=()=>{
         }else{            
             const json ={Email: emailid,Name:name,Password: pass};                            
             const config  = { headers: { 'Content-Type' : 'application/json' } }            
-            axios.post('http://localhost:3001/signupUser', JSON.stringify(json),config)
+            axios.post('https://server-lotteryapp.herokuapp.com/signupUser', JSON.stringify(json),config)
                 .then(function (response) { 
                     if(response.data.status==="failed"){
                         setPopupContent(response.data.message);
@@ -75,7 +75,7 @@ const Signup=()=>{
         event.preventDefault();
         const json ={Token:code,Email:emailid};                            
         const config  = { headers: { 'Content-Type' : 'application/json' } }
-        axios.post('http://localhost:3001/tokenVerify  ', JSON.stringify(json),config)
+        axios.post('https://server-lotteryapp.herokuapp.com/tokenVerify  ', JSON.stringify(json),config)
                 .then(function (response) { 
                     if(response.data.status==="failed"){
                         setPopupContent(response.data.message);

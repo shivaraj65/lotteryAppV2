@@ -28,7 +28,7 @@ const Login=()=>{
         event.preventDefault();           
         const json ={Email: emailid,Password: pass};            
         const config  = {headers: {'Content-Type': 'application/json'}}
-        axios.post('http://localhost:3001/loginWebsiteUser', JSON.stringify(json),config)
+        axios.post('https://server-lotteryapp.herokuapp.com/loginWebsiteUser', JSON.stringify(json),config)
             .then(function (response) {              
                 if(response.data.status==="success"){
                     window.sessionStorage.setItem('userName', response.data.name);
@@ -36,7 +36,7 @@ const Login=()=>{
                     window.sessionStorage.setItem('userID',response.data.id);
                     setPageNav(1);
                 }else{
-                    setPopupContent(response.data);
+                    setPopupContent(response.data.message);
                     handleShow();
                 }
             })
@@ -49,12 +49,12 @@ const Login=()=>{
         event.preventDefault();  
         const json ={Email: window.sessionStorage.getItem("userEmail"),Token:otp};            
         const config  = {headers: {'Content-Type': 'application/json'}}
-        axios.post('http://localhost:3001/logintotp', JSON.stringify(json),config)
+        axios.post('https://server-lotteryapp.herokuapp.com/logintotp', JSON.stringify(json),config)
         .then(function (response) {              
             if(response.data.status==="success"){
                 navigate("/dashboard/"+window.sessionStorage.getItem("userID"));                
             }else{
-                setPopupContent(response.data);
+                setPopupContent(response.data.message);
                 handleShow();
             }
         })
