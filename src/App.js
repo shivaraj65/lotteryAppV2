@@ -20,9 +20,9 @@ function App() {
           <Route exact path="/login" element={<Login/>} />
           <Route exact path="/signup" element={<Signup/>} />
           <Route exact path="/dashboard/:id" element={<Dashboard/>} />
-          {/* <Route exact path="mailauth" element={<Landing/>} > */}
+          <Route exact path="mailauth" element={<Landing/>} >
             <Route path="/mailauth/:id" element={<Redirecter/>} />
-          {/* </Route> */}
+          </Route>
         
       </Routes>
     </HashRouter>
