@@ -52,7 +52,11 @@ const Signup=()=>{
             alert("Kindly enter a password as per our Password Policy.");
         }else{            
             const json ={Email: emailid,Name:name,Password: pass};                            
-            const config  = { headers: { 'Content-Type' : 'application/json' } }            
+            const config  = { headers: { 
+                'Content-Type' : 'application/json',
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+            } }            
             axios.post('https://server-lotteryapp.herokuapp.com/signupUser', JSON.stringify(json),config)
                 .then(function (response) { 
                     if(response.data.status==="failed"){
@@ -74,7 +78,11 @@ const Signup=()=>{
     const submitHandlerQR=(event)=>{
         event.preventDefault();
         const json ={Token:code,Email:emailid};                            
-        const config  = { headers: { 'Content-Type' : 'application/json' } }
+        const config  = { headers: { 
+            'Content-Type' : 'application/json' ,
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+        } }
         axios.post('https://server-lotteryapp.herokuapp.com/tokenVerify  ', JSON.stringify(json),config)
                 .then(function (response) { 
                     if(response.data.status==="failed"){

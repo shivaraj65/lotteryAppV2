@@ -27,7 +27,11 @@ const Login=()=>{
     const submitHandlerLogin=(event)=>{
         event.preventDefault();           
         const json ={Email: emailid,Password: pass};            
-        const config  = {headers: {'Content-Type': 'application/json'}}
+        const config  = {headers: {
+            'Content-Type': 'application/json',
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+        }}
         axios.post('https://server-lotteryapp.herokuapp.com/loginWebsiteUser', JSON.stringify(json),config)
             .then(function (response) {              
                 if(response.data.status==="success"){
@@ -48,7 +52,11 @@ const Login=()=>{
     const submitHandlerOTP = (event)=>{
         event.preventDefault();  
         const json ={Email: window.sessionStorage.getItem("userEmail"),Token:otp};            
-        const config  = {headers: {'Content-Type': 'application/json'}}
+        const config  = {headers: {
+            'Content-Type': 'application/json',
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+        }}
         axios.post('https://server-lotteryapp.herokuapp.com/logintotp', JSON.stringify(json),config)
         .then(function (response) {              
             if(response.data.status==="success"){
