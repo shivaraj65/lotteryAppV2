@@ -34,7 +34,7 @@ const Redirecter=()=>{
                     'Content-Type': 'application/x-www-form-urlencoded',
                     'Access-Control-Allow-Origin':'*'
         }}
-        axios.post('http://localhost:3001/changeVerification', 
+        axios.post('https://server-lotteryapp.herokuapp.com/changeVerification', 
         QueryString.stringify(formData),config)
         .then(function (response) {
             console.log(response.data);
